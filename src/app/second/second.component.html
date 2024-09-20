@@ -1,0 +1,26 @@
+<p>second works!</p>
+
+<h1 [style.color]="ColorName">Single Style Binding</h1>
+
+<h1 [style]="mcol">Mutiple Style Binding</h1>
+
+<h1 [class]="singleclass">Single Class Binding</h1>
+
+<h1 [class]="multipleclass">Multiple Class Binding</h1>
+
+
+Enter Color to change<input type="text" #name/>
+<input type="button" value="button" (click)="alert(name.value)"/>
+<h5 [style.color] = "color">Changed Color</h5>
+
+<h2>______________________________________________________________</h2>
+
+<input type="color" [(ngModel)] = "ColorValue"/>
+
+
+<h2 [style.color] = "ColorValue">Color Value</h2>
+<h2>______________________________________________________________</h2>
+
+
+<input  type="text" [(ngModel)]="MyData"/> {{MyData}}
+
